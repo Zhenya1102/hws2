@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+body {
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+.App {
+    --header_height: 60px;
+    max-width: 1110px;
+    padding: 0 15px;
+    margin: 130px auto 0 auto;
+}
+.hwTitle {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 35px 0;
+}
+.hw {
+    display: flex;
+    flex-direction: column;
+}
+.message {
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
+    margin-bottom: 60px;
+}

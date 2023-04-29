@@ -1,0 +1,49 @@
+.message {
+    align-self: flex-end;
+}
+
+.imageAndText {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 4px;
+    column-gap: 10px;
+}
+
+.imageAndText img {
+    width: 48px;
+    height: 48px;
+    align-self: flex-end;
+}
+
+.text {
+    text-align: right;
+    line-height: 20px;
+    background: #0066CC;
+    box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1);
+    color: #FFFFFF;
+    border-radius: 20px;
+    padding: 10px 25px 8px 13px;
+}
+
+.text:after {
+}
+
+.name {
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.messageText {
+    font-family: 'Montserrat';
+}
+
+.time {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+    text-align: right;
+    padding-right: 10px;
+}
