@@ -16,6 +16,16 @@ body {
     font-weight: 600;
     margin: 0 0 35px 0;
 }
+.hw1 {
+    margin-bottom: 37px;
+    border-bottom: 1px solid #D9D9D9;
+}
+.hw2 {
+    position: relative;
+    padding-bottom: 73px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
 .hw {
     display: flex;
     flex-direction: column;
