@@ -2,33 +2,72 @@
 }
 
 .inputAndButtonContainer {
+    display: flex;
+    column-gap: 12px;
 }
 
 .error {
+    font-size: 14px;
+    line-height: 17px;
+    color: #CC0000;
+    padding-top: 7px;
 }
 
 .input {
+    padding: 8px 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    flex: 0 1 372px;
+    width: 372px;
+    min-height: 36px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
 }
 
 .input:focus {
 }
 
 .errorInput {
+    flex: 0 1 372px;
+    width: 372px;
+    min-height: 36px;
+    border: 1px solid #CC0000;
+    border-radius: 5px;
 }
 
 .button {
+    height: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    /*background: #0066CC;*/
+    background: #0066CC;
+    /*opacity: 0.5;*/
+    border-radius: 3px;
+    padding: 7px 24px;
+    align-self: flex-start;
 }
 
 .button:focus {
+    background: none;
 }
 
 .button:active {
+    background: #0066CC;
 }
 
 .button:disabled {
+    background: #0066CC;
+    opacity: 0.5;
 }
 
 .text {
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 9px;
 }
 
 .greeting {
