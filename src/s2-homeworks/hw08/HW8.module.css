@@ -1,23 +1,63 @@
 .item {
+    background-color: #FFFFFF;
+    padding: 16px 17px 16px 17px;
+    display: flex;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    border-bottom: 1px solid #E5E5E5;
 }
+.item td {
 
+}
 .item:last-of-type {
+    border-bottom: none;
 }
 
 .users {
+    display: flex;
+    flex-direction: column;
+    /*padding: 9px 17px 9px 17px;*/
 }
-
+.users tbody {
+    /*padding: 16px 17px 16px 17px;*/
+    display: flex;
+    flex-direction: column;
+}
 .buttonsContainer {
+    align-self: flex-end;
+    display: flex;
+    column-gap: 12px;
+    flex-wrap: wrap;
+    row-gap: 12px;
+    margin-bottom: 18px;
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 606px;
+    font-size: 14px;
+    line-height: 1.14;
 }
 
 .thead {
+    font-weight: 600;
+    display: flex;
+    background-color: #E5E5E5;
+    padding: 9px 17px 9px 17px;
 }
-
+.thead tr {
+    max-width: 300px;
+    flex: 0 1 300px;
+    display: flex;
+    justify-content: space-between;
+}
 .nameCol {
+    flex: 0 1 50%;
 }
 
 .ageCol {
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
 }
