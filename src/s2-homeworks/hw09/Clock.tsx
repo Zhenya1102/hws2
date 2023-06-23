@@ -66,7 +66,7 @@ function Clock() {
                     {show ? (
                         <>
                             <span id={'hw9-date'}>{stringDate}</span>,
-                            <span id={'hw9-month'}> {stringMonth}</span>,{' '}
+                            <span id={'hw9-month'}> {stringMonth}</span>{' '}
                         </>
                     ) : (
                         <>
