@@ -1,14 +1,31 @@
 .buttonsContainer {
+    display: flex;
+    column-gap: 21px;
 }
 
+.buttonsContainer button:disabled {
+    color: #FFFFFF;
+}
+
+
 .clock {
+    display: flex;
+    flex-direction: column;
 }
 
 .watch {
+    align-self: flex-start;
+    flex: 0 1 100%;
+    margin-bottom: 8px;
+    cursor: pointer;
 }
 
 .watch strong {
 }
 
 .more {
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 27px;
 }
