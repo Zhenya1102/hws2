@@ -47,7 +47,8 @@
     /*opacity: 0.5;*/
     border-radius: 3px;
     padding: 7px 24px;
-    align-self: flex-start;
+    /*align-self: flex-start;*/
+
 }
 
 .button:focus {
