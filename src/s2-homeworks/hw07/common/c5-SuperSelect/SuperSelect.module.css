@@ -3,6 +3,7 @@
     min-height: 24px;
     border: 1px solid #C2C2C2;
     cursor: pointer;
+    max-width: 171px;
 }
 
 .select:focus {
