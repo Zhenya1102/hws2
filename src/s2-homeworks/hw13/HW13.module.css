@@ -1,7 +1,7 @@
 .buttonsContainer {
     display: flex;
     column-gap: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 27px;
 }
 
 .responseContainer {
