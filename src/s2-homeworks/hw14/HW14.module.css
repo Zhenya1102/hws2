@@ -1,7 +1,11 @@
 .tech {
-
+    max-width: 468px;
 }
 
 .loading {
-
+    max-width: 468px;
+    text-align: right;
+}
+input {
+    max-width: 468px;
 }
