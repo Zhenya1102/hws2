@@ -50,37 +50,25 @@ const HW15 = () => {
     const sendQuery = (params: any) => {
         setLoading(true)
         getTechs(params)
-            .then((res) => {
-                // делает студент
-
-                // сохранить пришедшие данные
-
-                //
+            .then((res: any) => {
+                setTechs(res.data.techs) // получаем данные и сохраняем в techs
+                setTotalCount(res.data.totalCount) // получаем число общего количество элементов
+                setLoading(false) // отключили Loading после получения данных
             })
     }
 
     const onChangePagination = (newPage: number, newCount: number) => {
-        // делает студент
-
-        // setPage(
-        // setCount(
-
-        // sendQuery(
-        // setSearchParams(
-
-        //
+        setPage(newPage) // записываем текущую страницу на которую мы нажали
+        setCount(newCount) // записываем количество технологий
+        sendQuery({page: newPage, count: newCount})
+        setSearchParams({page: String(newPage)})
     }
 
     const onChangeSort = (newSort: string) => {
-        // делает студент
-
-        // setSort(
-        // setPage(1) // при сортировке сбрасывать на 1 страницу
-
-        // sendQuery(
-        // setSearchParams(
-
-        //
+        setSort(newSort)
+        setPage(1) // при сортировке сбрасывать на 1 страницу
+        sendQuery({page, count, sort: newSort})
+        setSearchParams({page: String(page)})
     }
 
     useEffect(() => {

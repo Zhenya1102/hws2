@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {ChangeEvent} from 'react'
 import SuperSelect from '../../../hw07/common/c5-SuperSelect/SuperSelect'
 import {Pagination} from '@mui/material'
 import s from './SuperPagination.module.css'
@@ -13,17 +13,24 @@ export type SuperPaginationPropsType = {
 
 const SuperPagination: React.FC<SuperPaginationPropsType> = (
     {
-        page, itemsCountForPage, totalCount, onChange, id = 'hw15',
+        page,
+        itemsCountForPage,
+        totalCount,
+        onChange,
+        id = 'hw15',
     }
 ) => {
-    const lastPage = 10 // пишет студент // вычислить количество страниц
+    const lastPage = Math.ceil(totalCount / itemsCountForPage) // чтобы вычислить количество страниц на основе totalCount и itemsCountForPage.
 
-    const onChangeCallback = (event: any, page: number) => {
-        // пишет студент
+
+    const onChangeCallback = (event: React.ChangeEvent<unknown>, page: number) => {
+        onChange(page, itemsCountForPage); // при нажатии на какую либо страницу сработает onChange
     }
 
     const onChangeSelect = (event: any) => {
-        // пишет студент
+        onChange(page, event);
+        //В функции onChangeSelect добавлена строка const count = event.target.value as number; для извлечения выбранного значения.
+        // В функции onChangeSelect вызывается onChange(1, count) для передачи новых значений страницы и количества элементов на странице в функцию onChange.
     }
 
     return (
@@ -52,7 +59,7 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
                     {id: 7, value: 7},
                     {id: 10, value: 10},
                 ]}
-                onChange={onChangeSelect}
+                onChangeOption={onChangeSelect}
             />
 
             <span className={s.text2}>
